@@ -3,42 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zadatak2</title>
-<style>
-    a{
-        position: fixed;
-        right: 0px;
-        bottom: 0px;
-    }
-    .karta{
-        position: absolute;
-        z-index: 1;
-        border: 5px solid black;
-    }
-    .karta2{
-        position: absolute;
-        z-index: 2;
-        top: 50px;
-        border: 5px solid black;
-    }
-    .karta3{
-        position: absolute;
-        z-index: 3;
-        top: 100px;
-        border: 5px solid black;
-    }
-</style>
+    <title>Document</title>
+    <style>
+        .slike{
+            display: flex;
+            flex-wrap: wrap;
+            position: static;
+        }
+        .karta{
+            position: absolute;
+            z-index: 1;
+            border: 5px solid black;
+        }
+        .karta1{
+            position: absolute;
+            z-index: 2;
+            top: 35px;
+            border-left: 5px solid black;
+            border-right: 5px solid black;
+        }
+        .karta2{
+            position: absolute;
+            z-index: 3;
+            top: 65px;
+            border-left: 5px solid black;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black;
+            border-right: 5px solid black;;
+        }
+        a{
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+        .prvagrupa{
+            position: absolute;
+        }
+        .drugagrupa{
+            position: absolute;
+            left: 155px;
+        }
+        .trecagrupa{
+            position: absolute;
+            left: 305px;
+        }
+        .cetvrtagrupa{
+            position: absolute;
+            left: 455px;
+            flex-wrap: wrap;
+        }
+        
+    </style>
 </head>
 <body>
-  <div style="display: flex;">
-    <div class="karta"><img src="images/Kralj.jpg" alt="kralj"></div>
-    <div class="karta2"><img src="images/Dama.jpg" alt="dama"></div>
-    <div class="karta3"><img src="images/Dečko.jpg" alt="dečko"></div>
-  </div>
-<div style="display: flex;">
-    <div class="karta"><img src="images/10.jpg" alt="10"></div>
-    <div class="karta2"><img src="images/9.jpg" alt="9"></div>
-    <div class="karta3"><img src="images/8.jpg" alt="8"></div>
-  </div>
+    <div class="slike">
+        <div class="prvagrupa">
+            <div class="karta"><img src="images/Kralj.jpg" alt=""></div>
+            <div class="karta1"><img src="images/Dama.jpg" alt=""></div>
+            <div class="karta2"><img src="images/Dečko.jpg" alt=""></div>
+        </div>
+         <div class="drugagrupa">
+            <div class="karta"><img src="images/10.jpg" alt=""></div>
+            <div class="karta1"><img src="images/9.jpg" alt=""></div>
+            <div class="karta2"><img src="images/8.jpg" alt=""></div>
+        </div>
+        <div class="trecagrupa">
+            <div class="karta"><img src="images/7.jpg" alt=""></div>
+            <div class="karta1"><img src="images/6.jpg" alt=""></div>
+            <div class="karta2"><img src="images/5.jpg" alt=""></div>
+        </div>
+        <div class="cetvrtagrupa">
+            <div class="karta"><img src="images/4.jpg" alt=""></div>
+            <div class="karta1"><img src="images/3.jpg" alt=""></div>
+            <div class="karta2"><img src="images/2.jpg" alt=""></div>
+        </div>
+    </div>
+    <a href="index.html">povrat na početak</a>
 </body>
 </html>
